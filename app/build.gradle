@@ -22,15 +22,5 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':utilcode')
-    compile rootProject.ext.deps.design
-    compile rootProject.ext.deps.supportV4
 
-    // RxAndroid
-    compile rootProject.ext.deps.rxAndroid
-    compile rootProject.ext.deps.rxJava
-
-    // LeakCanary
-    debugCompile rootProject.ext.deps.leakcanaryAndroid
-    releaseCompile rootProject.ext.deps.leakcanaryAndroidNoOp
-    testCompile rootProject.ext.deps.leakcanaryAndroidNoOp
 }
